@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Andri Ajah - Price List</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .main-wrapper {
+      text-align: center;
+      width: 100%;
+      max-width: 1000px;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header {
+      margin-bottom: 30px;
+    }
+
+    .logo-img {
+      width: 220px;
+      height: auto;
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15));
+      animation: zoomIn 1.2s ease-in-out;
+    }
+
+    .pricelist-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+
+    .price-table {
+      background-color: #111;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .price-table:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .price-image {
+      width: 100%;
+      max-width: 450px;
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn {
+      background-color: #00b894;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #019870;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-wrapper">
+    <header>
+      <img src="https://i.imgur.com/ptZ6yk2.png" alt="Video Andri Ajah Logo" class="logo-img">
+    </header>
+
+    <main>
+      <div class="pricelist-container">
+        <div class="price-table">
+          <img src="https://i.imgur.com/YgkEKJd.png" alt="Price List Event" class="price-image">
+        </div>
+
+        <div class="price-table">
+          <img src="https://i.imgur.com/dKvXnmn.png" alt="Price List Kontrak" class="price-image">
+        </div>
+      </div>
+
+      <nav>
+        <a href="home.html" class="btn">Home</a>
+        <a href="contact.html" class="btn">Contact</a>
+      </nav>
+    </main>
+  </div>
+
+</body>
+</html>

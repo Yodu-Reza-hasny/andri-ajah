@@ -1,0 +1,206 @@
+/* Import font pixel (mirip desain Anda) */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    /* Gunakan font 'VT323' atau 'monospace' jika gagal */
+    font-family: 'VT323', 'Courier New', Courier, monospace;
+    font-size: 1.2rem; /* Ukuran font dasar */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Pastikan body setinggi layar */
+}
+
+/* --- 1. Halaman Splash (index.html) --- */
+
+.splash-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.splash-logo {
+    width: 100%;
+    max-width: 550px; /* Atur besar/kecil logo di sini */
+    height: auto;
+    margin-bottom: 25px; /* Jarak logo ke tombol */
+}
+
+/* Tombol "Masuk Ajaah" */
+.splash-content .btn {
+    font-size: 2rem;
+    padding: 15px 40px;
+}
+
+
+/* --- 2. Halaman Konten Utama (home, about, dll) --- */
+.main-wrapper {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin: 20px auto; /* Tengah secara horizontal, beri jarak atas/bawah */
+    padding: 30px;
+    /* Border putih seperti di desain Anda */
+    border: 3px solid #fff;
+    min-height: 90vh; /* Tinggi minimum agar border terlihat rapi */
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.logo-img {
+    width: 200px; /* Sesuaikan ukuran logo statis Anda */
+    height: auto;
+}
+
+main {
+    padding: 20px 0;
+}
+
+/* Teks Greeting / Tentang Kami */
+.greeting, .about-text {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px; /* Agar teks tidak terlalu lebar */
+}
+
+/* Navigasi */
+nav {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Tombol akan turun jika tidak muat */
+    gap: 15px; /* Jarak antar tombol */
+}
+
+/* Tombol Umum */
+.btn {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-family: 'VT323', 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* --- 3. Halaman Portofolio (portfolio.html) --- */
+/* Ini adalah REVISI FINAL untuk Portofolio (Versi iframe) */
+
+.portfolio-grid {
+    display: grid;
+    /* 3 kolom di desktop, 1 kolom di mobile */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    border: 2px solid #fff;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* 'justify-content' dihapus agar judul rata di bawah */
+    align-items: center;
+    min-height: 200px;
+}
+
+/* CSS BARU untuk video Google Drive */
+.portfolio-item iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Memaksa rasio 16:9 */
+    border: none;
+}
+
+/* CSS BARU untuk judul video */
+.portfolio-item p {
+    font-size: 1.1rem; /* Dikecilkan agar judul panjang muat */
+    line-height: 1.4;
+    margin-top: 15px; /* Jarak dari video ke judul */
+    color: #fff;
+}
+
+
+/* --- 4. Halaman Price List (pricelist.html) --- */
+/* Ini adalah REVISI FINAL untuk Price List (Versi Gambar) */
+
+.pricelist-container {
+    display: flex;
+    flex-direction: row; /* Berdampingan di desktop */
+    gap: 30px;
+}
+
+/* Ini adalah frame/bingkai putih untuk gambar */
+.price-table {
+    border: 2px solid #fff;
+    padding: 20px; /* Beri jarak antara border dan gambar */
+    flex: 1; /* Kedua bingkai akan berbagi ruang */
+}
+
+/* Ini adalah gambar price list di dalam bingkai */
+.price-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ini adalah cara untuk "Tumpuk di mobile" */
+@media (max-width: 768px) {
+    .pricelist-container {
+        flex-direction: column; /* Tumpuk ke bawah saat layar kecil */
+    }
+}
+
+
+/* --- 5. Halaman Kontak (contact.html) --- */
+.contact-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.8rem;
+}
+
+.contact-person img {
+    width: 50px; /* Ukuran ikon telepon */
+    height: 50px;
+}
+
+.contact-person a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px dashed #fff;
+}
+
+.contact-person a:hover {
+    color: #aaa;
+    border-bottom: 2px solid #aaa;
+}
+
+/* Navigasi di halaman kontak (hanya Home) */
+.contact-nav {
+    text-align: right; /* Sesuai desain, tombol Home di kanan */
+    margin-top: 50px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Andri Ajah - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .main-wrapper {
+      text-align: center;
+      width: 100%;
+      max-width: 800px;
+      padding: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header {
+      margin-bottom: 25px;
+    }
+
+    .logo-img {
+      width: 220px;
+      height: auto;
+      filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.15));
+      animation: zoomIn 1.2s ease-in-out;
+    }
+
+    .contact-title {
+      font-size: 1.5rem;
+      margin-bottom: 25px;
+      color: #00b894;
+      letter-spacing: 1px;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .contact-person {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #111;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-person:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+    }
+
+    .contact-person img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .contact-person a {
+      color: #00b894;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-person a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn {
+      background-color: #00b894;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #019870;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-wrapper">
+    <header>
+      <img src="https://i.imgur.com/ptZ6yk2.png" alt="Video Andri Ajah Logo" class="logo-img">
+    </header>
+
+    <main>
+      <h2 class="contact-title">CONTACT KITA AJAAH !!!</h2>
+
+      <div class="contact-list">
+        <div class="contact-person">
+          <img src="https://i.imgur.com/mrbp2jH.png" alt="Phone Icon">
+          <span>Reza : <a href="https://wa.me/6281311893500" target="_blank">wa.me/+6281311893500</a></span>
+        </div>
+
+        <div class="contact-person">
+          <img src="https://i.imgur.com/mrbp2jH.png" alt="Phone Icon">
+          <span>Andri : <a href="https://wa.me/6281362407704" target="_blank">wa.me/+6281362407704</a></span>
+        </div>
+      </div>
+
+      <div class="contact-nav">
+        <a href="index.html" class="btn">Home</a>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

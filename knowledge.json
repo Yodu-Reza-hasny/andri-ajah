@@ -1,0 +1,15 @@
+{
+  "salam_dan_sapa": [
+    { "question": "halo", "answer": "Hai 👋, aku Botti — asisten virtual Andri Ajah Studio." },
+    { "question": "hai", "answer": "Hai juga! Mau tanya tentang foto, video, atau harga layanan kami?" },
+    { "question": "selamat pagi", "answer": "Selamat pagi ☀️, semoga harimu menyenangkan!" },
+    { "question": "selamat malam", "answer": "Selamat malam 🌙, semoga harimu tenang dan santai." },
+    { "question": "siapa kamu", "answer": "hai aku Botti." },
+    { "question": "kamu siapa", "answer": "hai aku Botti." },
+    { "question": "siapa", "answer": "hai aku Botti." }
+  ],
+  "about": [
+    { "question": "tentang", "answer": "Andri Ajah Studio adalah penyedia jasa foto dan video profesional untuk event, company profile, dan proyek kreatif." },
+    { "question": "about", "answer": "Andri Ajah Studio provides professional photo and video production services for events and creative projects." }
+  ]
+}

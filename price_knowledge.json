@@ -1,0 +1,46 @@
+{
+  "event_once": [
+    {
+      "service": "Videographer",
+      "description": "Pengambilan video saat event berlangsung (Full Day, max 8 jam)",
+      "price": "Rp 1.500.000 / Hari"
+    },
+    {
+      "service": "Video Editor",
+      "description": "Editing hasil video event menjadi 1 video utama (durasi maks. 5 menit)",
+      "price": "Rp 1.000.000 / Video"
+    },
+    {
+      "service": "Bumper Video",
+      "description": "Video pembuka/penutup berdurasi 30 detik (Desain animasi & identitas event)",
+      "price": "Rp 500.000 / 30 Detik"
+    },
+    {
+      "service": "Photographer",
+      "description": "Dokumentasi foto selama event (1 orang fotografer)",
+      "price": "Rp 1.500.000 / Hari"
+    }
+  ],
+  "event_contract": [
+    {
+      "service": "Videographer (Multi-Day)",
+      "description": "Produksi video proyek besar seperti company profile, dokumenter, atau liputan series",
+      "price": "Rp 1.000.000 / Hari"
+    },
+    {
+      "service": "Video Editor (Kontrak)",
+      "description": "Editing video utama + versi turunan (cut-down, teaser, dll)",
+      "price": "Rp 1.000.000 / Video Utama"
+    },
+    {
+      "service": "Bumper Video (Kontrak)",
+      "description": "Intro/outro berdurasi 30 detik untuk brand atau project series",
+      "price": "Rp 500.000 / 30 Detik"
+    },
+    {
+      "service": "Photographer (Opsional)",
+      "description": "Dokumentasi behind the scene atau stills",
+      "price": "Rp 1.000.000 / Hari"
+    }
+  ]
+}

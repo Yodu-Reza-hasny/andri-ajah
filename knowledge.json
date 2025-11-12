@@ -10,6 +10,7 @@
   ],
   "about": [
     { "question": "tentang", "answer": "Andri Ajah Studio adalah penyedia jasa foto dan video profesional untuk event, company profile, dan proyek kreatif." },
+    { "question": "contact", "answer": "kamu bisa langsung masuk ke tab contact ya." },
     { "question": "about", "answer": "Andri Ajah Studio provides professional photo and video production services for events and creative projects." }
   ]
 }
